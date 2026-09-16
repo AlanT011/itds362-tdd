@@ -1,6 +1,8 @@
  # kitchen.py
 class Quantity:
- def __init__(self, amount):
-  self.amount = amount
- def times(self, multiplier):
-  self.amount = self.amount * multiplier
+    def __init__(self, amount):
+        self.amount = amount
+#  def times(self, multiplier):
+#   self.amount = self.amount * multiplier
+    def times(self, multiplier):
+        return Quantity(self.amount * multiplier)
